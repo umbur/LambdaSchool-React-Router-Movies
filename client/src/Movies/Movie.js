@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const Movie = ({ match }) => {
-  console.log('Props:', match)
+const Movie = ({ match, history }) => {
+  console.log('Props:', match, history)
   const [movie, setMovie] = useState();
  
   useEffect(() => {
